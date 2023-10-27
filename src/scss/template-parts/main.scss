@@ -1,5 +1,172 @@
 .main {
-    background: #17161C;
-    height: 100%;
-    width: 100%;
+    background-color: #17161C;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1280px;
+        margin: 0 auto;
+        padding-top: 235px;
+        padding-bottom: 120px;
+    }
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 164px;
+        gap: 48px;
+        &--text {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+        &--title {
+            font-family: 'Kharkiv-Tone', sans-serif;
+            font-size: 96px;
+            font-weight: 400;
+            line-height: 130%;
+            display: flex;
+            padding-bottom: 40px;
+            color: #D9D9D9;
+        }
+        &--subtitle {
+            font-family: 'Inter-Medium', sans-serif;
+            font-weight: 500;
+            color: #D9D9D9;
+            line-height: 140%; 
+            font-size: 24px;
+            padding-bottom: 60px;
+        }
+        &--img {
+            position: relative;
+            width: 412px;
+            height: 510px;
+            flex-shrink: 0;
+            z-index: 2;
+            &::after {
+                content: '';
+                position: absolute;
+                background-image: url(../img/main__image--support.png);
+                width: 186%;
+                height: 164%;
+                left: -190px;
+                top: -90px;
+                z-index: -1;
+                overflow: hidden;
+                pointer-events: none;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                background-image: url(../img/main__gradient.png);
+                width: 2200px;
+                height: 1500px;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                left: -500px;
+                top: -400px;
+                z-index: -1;
+                bottom: 0;
+                overflow: hidden;
+                pointer-events: none;
+            }
+        }
+    }
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #5CE1E6;
+        gap: 48px;
+        padding: 12px 24px;
+        border-radius: 100px;
+        box-shadow: 0px 0px 20px 0px rgba(92, 225, 230, 0.30);
+        &--text {
+            color: #17161C;
+            font-family: 'Inter-Semibold';
+        }
+        &--img {
+            width: 36px;
+            height: 36px;
+        }
+    }
+    &__cards {
+        display: flex;
+        gap: 33px;
+        align-items: center;
+        justify-content: center;
+        &--item {
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 239px;
+            width: 405px;
+            background-color: #D9D9D9;
+            border-radius: 20px;
+            z-index: 3;
+            &::before {
+                content: '';
+                width: 128px;
+                height: 128px;
+                position: absolute;
+                background-color: #FFF;
+                border-radius: 20px;
+                right: 0;
+                top: -20px;
+                background-color: #D9D9D9;
+                z-index: 1;
+            }
+            &:nth-of-type(1) {
+                &::after {
+                    content: '';
+                    background-image: url(../img/main__star.svg);
+                    position: absolute;
+                    width: 113px;
+                    height: 113px;
+                    top: 0;
+                    right: 0;
+                }
+            }
+            &:nth-of-type(2) {
+                background-color: #F05D23;
+                &::before {
+                    background-color: #F05D23;
+                }
+            }
+            &:nth-of-type(3) {
+                background-color: #C5D86D;
+                &::before {
+                    background-color: #C5D86D;  
+                }
+            }
+        }
+        &--title {
+            font-family: 'Kharkiv-Tone', sans-serif;
+            font-size: 40px;
+            line-height: 130%;
+            text-align: center;
+            z-index: 2;
+            &.second {
+                font-size: 96px;
+                color: #D9D9D9;
+            }
+            &.third {
+                font-size: 96px;
+            }
+        }
+        &--subtitle {
+            font-family: 'Inter-Medium', sans-serif;
+            font-weight: 500;
+            font-size: 32px;
+            &.second {
+                color: #D9D9D9;
+            }
+        }
+    }
+
 }
