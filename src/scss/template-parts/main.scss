@@ -71,8 +71,8 @@
                 background-size: contain;
                 background-position: center;
                 background-repeat: no-repeat;
-                left: -500px;
-                top: -400px;
+                left: -700px;
+                top: -250px;
                 z-index: -1;
                 bottom: 0;
                 overflow: hidden;
@@ -184,6 +184,9 @@
         &__content {
             &--img {
                 margin-right: 110px;
+                &::before {
+                    top: -400px;
+                }
             }
         }
     }
@@ -214,7 +217,6 @@
         }
         &__cards {
             &--item {
-                max-width: 400px;
                 width: 100%;
                 &::before {
                     width: 100px;
@@ -284,6 +286,9 @@
         }
         &__cards {
             flex-direction: column;
+            &--item {
+                max-width: 440px;
+            }
         }
     }
 }

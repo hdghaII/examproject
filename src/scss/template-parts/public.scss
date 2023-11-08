@@ -1,0 +1,168 @@
+.public {
+    background-color: #D9D9D9;
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1280px;
+        margin: 0 auto;
+        gap: 32px;
+        padding-bottom: 223px;
+        padding-top: 150px;
+        position: relative;
+    }
+    &__icon {
+        width: 205px;
+        height: 205px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: -102px;
+    }
+    &__img {
+        width: 435px;   
+        height: 556px;
+        padding: 24px;
+        flex-shrink: 0;
+        border: 3px solid #17161C;
+        border-radius: 65px;
+        position: relative;
+        &::after {
+            content: '';
+            background-image: url(../img/public__icon1.svg);
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-repeat: no-repeat;
+            left: -5px;
+            top: -5px;
+        }
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-color: #17161C;
+        padding: 60px 36px;
+        border-radius: 50px;
+        &--title {
+            color: #5CE1E6;
+            font-family: "Kharkiv-Tone", sans-serif;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: 64px;
+            padding-bottom: 74px;
+            line-height: normal;
+        }
+        &--subtitle {
+            color: #D9D9D9;
+            font-family: 'Inter-Regular', sans-serif;
+            font-size: 18px;
+            font-weight: 400;
+            padding-bottom: 40px;
+            line-height: 130%;
+            border-bottom: 2px solid #D9D9D9;
+            margin-bottom: 33px;
+        }
+        &--button {
+            display: flex;
+            align-items: center;
+            padding: 12px 24px;
+            gap: 48px;
+            border: 2px solid #5CE1E6;
+            border-radius: 100px;
+            align-self: flex-end;
+        }
+        &--btntext {
+            color: #5CE1E6;
+            font-family: 'Inter-Semibold', sans-serif;
+            font-size: 16px;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+        &--btnarrow {
+            width: 36px;
+            height: 36px;
+        }
+    }
+}
+@media screen and (max-width: 1400px) {
+    .public {
+        &__wrapper {
+            padding: 90px 16px 150px 16px;
+        }
+        &__img {
+            width: 350px;
+            height: auto;
+        }
+        &__item {
+            padding: 48px 32px;
+            &--title {
+                font-size: 48px;
+                padding-bottom: 88px;
+            }
+            &--subtitle {
+                font-size: 16px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1100px) {
+    .public {
+        &__item {
+            &--subtitle {
+                padding-bottom: 15px;
+                margin-bottom: 15px;
+            }
+            &--title {
+                padding-bottom: 60px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px) {
+    .public {
+        &__wrapper {
+            flex-direction: column;
+            padding: 60px 16px 123px 16px;
+        }
+        &__img {
+            width: 440px;
+        }
+        &__item {
+            max-width: 440px;
+            &--title {
+                padding-bottom: 72px;
+            }
+            &--subtitle {
+                padding-bottom: 40px;
+                margin-bottom: 32px;
+            }
+            &--button {
+                width: 100%;
+                gap: unset;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .public {
+        &__img {
+            max-width: 440px;
+            width: 100%;
+        }
+        &__item {
+            &--title {
+                font-size: 32px;
+            }
+        }
+        &__icon {
+            width: 132px;
+            height: 132px;
+            bottom: -68px;
+        }
+    }
+}

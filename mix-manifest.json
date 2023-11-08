@@ -7,6 +7,7 @@
     "/assets/fonts/Kharkiv-Tone.woff": "/assets/fonts/Kharkiv-Tone.woff",
     "/assets/img/about__icon1.svg": "/assets/img/about__icon1.svg",
     "/assets/img/about__icon2.svg": "/assets/img/about__icon2.svg",
+    "/assets/img/about__icon3.svg": "/assets/img/about__icon3.svg",
     "/assets/img/about__image1.png": "/assets/img/about__image1.png",
     "/assets/img/about__image2.png": "/assets/img/about__image2.png",
     "/assets/img/button__arrow--darkwhite.svg": "/assets/img/button__arrow--darkwhite.svg",
@@ -17,5 +18,14 @@
     "/assets/img/main__gradient.png": "/assets/img/main__gradient.png",
     "/assets/img/main__image--support.png": "/assets/img/main__image--support.png",
     "/assets/img/main__image.png": "/assets/img/main__image.png",
-    "/assets/img/main__star.svg": "/assets/img/main__star.svg"
+    "/assets/img/main__star.svg": "/assets/img/main__star.svg",
+    "/assets/img/products__arrow.svg": "/assets/img/products__arrow.svg",
+    "/assets/img/products__gradient.png": "/assets/img/products__gradient.png",
+    "/assets/img/products__image1.png": "/assets/img/products__image1.png",
+    "/assets/img/products__image2.png": "/assets/img/products__image2.png",
+    "/assets/img/products__image3.png": "/assets/img/products__image3.png",
+    "/assets/img/products__image4.png": "/assets/img/products__image4.png",
+    "/assets/img/public__icon1.svg": "/assets/img/public__icon1.svg",
+    "/assets/img/public__icon2.svg": "/assets/img/public__icon2.svg",
+    "/assets/img/public__image1.png": "/assets/img/public__image1.png"
 }
