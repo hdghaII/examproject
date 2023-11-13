@@ -1537,6 +1537,102 @@ h1, h2, h3, h4, h5, h6 {
     bottom: -68px;
   }
 }
+.testim {
+  background-color: #C5D86D;
+}
+.testim__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.testim__heading {
+  display: flex;
+  padding-bottom: 24px;
+  margin-bottom: 58px;
+  border-bottom: 2px solid #17161C;
+  justify-content: space-between;
+  width: 100%;
+}
+.testim__title {
+  font-size: 64px;
+  font-family: "Kharkiv-Tone", sans-serif;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  color: #17161C;
+}
+.testim__button {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  border-radius: 100px;
+  border: 2px solid #17161C;
+  padding: 12px 24px;
+}
+.testim__btntext {
+  font-family: "Inter-Semibold";
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.testim__arrow {
+  width: 36px;
+  background-image: url(../img/button__arrow--darkwhite.svg);
+  height: 36px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1062px;
+  flex-direction: column;
+  border-radius: 36px;
+  border: 2px solid #17161C;
+  background-color: #D9D9D9;
+  padding: 40px 90px;
+  position: relative;
+}
+.swiper__marks {
+  content: "";
+  position: absolute;
+  width: 237px;
+  height: 237px;
+  z-index: 5;
+  background-image: url(../img/swiper__quotes.svg);
+  left: -77px;
+  top: 0;
+}
+.swiper__img {
+  width: 78px;
+  height: 78px;
+  margin-bottom: 16px;
+}
+.swiper__title {
+  font-family: "Inter-Semibold", sans-serif;
+  font-weight: 600;
+  list-style: normal;
+  font-size: 18px;
+  color: #F05D23;
+  padding-bottom: 16px;
+}
+.swiper__subtitle {
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 24px;
+}
+.swiper__content {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-family: 400;
+  line-height: 130%;
+}
+
 :root {
   --text-color: #111827;
   --color-bg: #fff;
@@ -1548,13 +1644,15 @@ html {
 
 body {
   position: relative;
+  overflow: hidden;
   margin: 0;
   font-family: sans-serif;
   font-size: 16px;
   line-height: 19px;
-  background-color: var(--color-bg);
-  color: var(--text-color);
   overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 0px;
 }
 body::-webkit-scrollbar-track {
   background-color: var(--color-bg);
