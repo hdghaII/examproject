@@ -89,7 +89,19 @@
         gap: 48px;
         padding: 12px 24px;
         border-radius: 100px;
-        box-shadow: 0px 0px 20px 0px rgba(92, 225, 230, 0.30);
+        border: 1px solid #17161C;
+        &:hover {
+            transition: all 0.3s ease-in-out;
+            background-color: #17161C;
+            cursor: pointer;
+            border: 1px solid #5CE1E6;
+            .main__button--img {
+                background-image: url('../img/button__arrow--bluedark.svg');
+            }
+            .main__button--text {
+                color: #5CE1E6;
+            }
+        }
         &--text {
             color: #17161C;
             font-family: 'Inter-Semibold';
@@ -97,6 +109,10 @@
         &--img {
             width: 36px;
             height: 36px;
+            background-size: contain;
+            flex-shrink: 0;
+            background-repeat: no-repeat;
+            background-image: url('../img/button__arrow.svg');
         }
     }
     &__cards {

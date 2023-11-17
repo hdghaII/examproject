@@ -35,10 +35,14 @@
         width: 100%;
         margin-top: 40px;
         &:hover {
+            transition: all 0.3s ease-in-out;
             cursor: pointer;
             background-color: #5CE1E6;
             .products__btntext {
                 color: #17161C;
+            }
+            .products__btnarrow {
+                background-image: url(../img/button__arrow--darkblueborder.svg);
             }
         }
     }
@@ -49,6 +53,7 @@
     &__btnarrow {
         width: 36px;
         height: 36px;
+        background-image: url('../img/button__arrow--light.svg');
     }
     &__content {
         display: flex;
@@ -93,6 +98,16 @@
             padding: 12px 24px;
             border: 2px solid #17161C;
             border-radius: 100px;
+            &:hover {
+                transition: all 0.3s ease-in-out;
+                background-color: #17161C;
+                .products__content--btntext {
+                    color: #D9D9D9;
+                }
+                .products__content--btnarrow {
+                    background-image: url('../img/button__arrow--greydarkborder.svg');
+                }
+            }
         }
         &--btntext {
             font-family: 'Inter-Semibold', sans-serif;
@@ -104,6 +119,7 @@
         &--btnarrow {
             width: 36px;
             height: 36px;
+            background-image: url('../img/button__arrow--darkwhite.svg');
         }
         &--img {
             width: 435px;
@@ -134,10 +150,14 @@
             display: flex;
             align-items: center;
             &:hover {
+                transition: all 0.3s ease-in-out;
                 cursor: pointer;
                 background-color: #5CE1E6;
                 .products__cards--btntext {
                     color: #17161C;
+                }
+                .products__cards--btnarrow {
+                    background-image: url(../img/button__arrow--darkblueborder.svg);
                 }
             }
         }
@@ -151,6 +171,7 @@
         &--btnarrow {
             width: 36px;
             height: 36px;
+            background-image: url(../img/button__arrow--light.svg);
         }
         &--title {
             font-family: 'Kharkiv-Tone', sans-serif;
@@ -205,6 +226,10 @@
             gap: 8px;
             padding-bottom: 4px;
             border-bottom: solid 2px #F05D23;
+            &:hover {
+                transition: all 0.3s ease-in-out;
+                border-bottom: solid 2px #17161C;
+            }
         }
         &--title {
             color: #D9D9D9;

@@ -7,6 +7,9 @@
         align-items: center;
         max-width: 1280px;
         margin: 0 auto;
+        position: relative;
+        padding-bottom: 168px;
+        padding-top: 182px;
     }
     &__heading {
         display: flex;
@@ -31,6 +34,19 @@
         border-radius: 100px;
         border: 2px solid #17161C;
         padding: 12px 24px;
+        &.bottom {
+            display: none;
+        }
+        &:hover {
+            transition: all 0.3s ease-in-out;
+            background-color: #17161C;
+            .testim__btntext {
+                color: #d9d9d9;
+            }
+            .testim__arrow {
+                background-image: url(../img/button__arrow--greydarkborder.svg);
+            }
+        }
     }
     &__btntext {
         font-family: 'Inter-Semibold';
@@ -45,17 +61,64 @@
     }
 }
 .swiper {
+    overflow: unset !important;
+    max-width: 1062px;
     &-slide {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 1062px;
+        max-width: 1062px;
         flex-direction: column;
         border-radius: 36px;
         border: 2px solid #17161C;
         background-color: #D9D9D9;
         padding: 40px 90px;
         position: relative;
+    }
+    &-pagination {
+        bottom: 125px !important;
+        &-bullet {
+            background-color: unset !important;
+            border: 2px solid #F05D23;
+            border-radius: 50%;
+            opacity: 1;
+            width: 16px;
+            height: 16px;
+            &-active {
+                background-color: #F05D23 !important;
+            }
+        }
+    }
+    &-button {
+        &-next {
+            width: 48px;
+            height: 48px;
+            top: unset;
+            right: -80px;
+            bottom: 0;
+            &::after {
+                content: '';
+                width: 48px;
+                height: 48px;
+                background-position: center;
+                background-image: url(../img/swiper-arrow.svg);
+            }
+        }
+        &-prev {
+            width: 48px;
+            height: 48px;
+            top: unset; 
+            left: -80px;
+            bottom: 0;
+            transform: rotate(180deg);
+            &::after {
+                content: '';
+                width: 48px;
+                height: 48px;
+                background-position: center;
+                background-image: url(../img/swiper-arrow.svg);
+            }
+        }
     }
     &__marks {
         content: '';
@@ -65,7 +128,7 @@
         z-index: 5;
         background-image: url(../img/swiper__quotes.svg);
         left: -77px;
-        top: 0;
+        top: -20px;
     }
     &__img {
         width: 78px;
@@ -92,5 +155,93 @@
         font-size: 18px;
         font-family: 400;
         line-height: 130%;
+    }   
+}
+@media screen and (max-width: 1400px) {
+    .testim {
+        &__wrapper {
+            padding-right: 16px;
+            padding-left: 16px;
+        }
+        &__heading {
+            align-items: center;
+        }
+        &__title {
+            font-size: 48px;
+        }
+    }
+    .swiper {
+        max-width: 800px;
+        &-slider {
+            max-width: 800px;
+        }
+        &__marks {
+            width: 195px;
+            height: 195px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
     }
 }
+@media screen and (max-width: 1024px) {
+    .testim {
+        &__wrapper {
+            padding-bottom: 60px;
+        }
+        &__title {
+            font-size: 32px;
+        }
+        &__button {
+            display: none;
+            &.bottom {
+                display: flex;
+                margin-top: 80px;
+                max-width: 440px;
+                width: 100%;
+                justify-content: space-between;
+            }
+        }
+    }
+    .swiper {
+        max-width: 440px;
+        width: 100%;
+        text-align: center;
+        &-slide {
+            max-width: 440px;
+            padding: 40px 24px;
+        }
+        &-pagination {
+            bottom: 165px !important;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .testim {
+        &__title {
+            text-align: center;
+            font-size: 28px;
+        }
+        &__heading {
+            justify-content: center;
+        }
+    }
+    .swiper {
+        &__marks {
+            width: 144px;
+            height: 144px;
+            left: -10px;
+            top: -60px;
+        }
+        &-button {
+            &-prev {
+                display: none;
+            }
+            &-next {
+                display: none;
+            }
+        }
+    }
+}
+
+

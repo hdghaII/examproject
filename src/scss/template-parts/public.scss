@@ -74,6 +74,16 @@
             border: 2px solid #5CE1E6;
             border-radius: 100px;
             align-self: flex-end;
+            &:hover {
+                transition: all 0.3s ease-in-out;
+                background-color: #5CE1E6;
+                .public__item--btntext {
+                    color: #17161C;
+                }
+                .public__item--btnarrow {
+                    background-image: url(../img/button__arrow--darkblueborder.svg);
+                }
+            }
         }
         &--btntext {
             color: #5CE1E6;
@@ -85,6 +95,7 @@
         &--btnarrow {
             width: 36px;
             height: 36px;
+            background-image: url(../img/button__arrow--light.svg);
         }
     }
 }
@@ -135,6 +146,7 @@
             max-width: 440px;
             &--title {
                 padding-bottom: 72px;
+                font-size: 32px;
             }
             &--subtitle {
                 padding-bottom: 40px;

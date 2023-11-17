@@ -28,6 +28,9 @@
     --text-color: #111827;
     --color-bg: #fff;
 }
+.no-scroll {
+    overflow: hidden;
+}
 html {
     overflow-x: hidden;
 
