@@ -43,6 +43,12 @@
             display: flex;
             gap: 40px;
         }
+        &--icon {
+            &:hover {
+                transform: scale(1.2);
+                transition: ease-in 0.1s;
+            }
+        }
         &--text {
             color: #5CE1E6;
             font-family: 'Kharkiv-Tone', sans-serif;
@@ -72,6 +78,9 @@
             color: #7C7C7C;
             font-family: 'Inter-Regular', sans-serif;
             font-size: 16px;
+            &:hover {
+                cursor: text;
+            }
         }
         &--submit {
             position: absolute;
@@ -98,6 +107,7 @@
             border: 2px solid #5CE1E6;
             width: 222px;
             &:hover {
+                transition: ease-in 0.3s;
                 background-image: url(../img/button__arrow--darkblueborder.svg);
                 background-color: #17161C;
                 color: #5CE1E6;
@@ -128,6 +138,9 @@
             font-weight: 400;
             font-size: 16px;
             line-height: normal;
+            &:hover {
+                color: #fff;
+            }
         }
         &--copyright {
             display: flex;
@@ -143,7 +156,10 @@
 @media screen and (max-width: 1400px) {
     .footer {
         &__grid {
-            column-gap: 100px;
+            justify-content: space-between;
+            column-gap: unset;
+            width: 100%;
+            padding: 0 32px;
         }
         &__newsletter {
             &--text {

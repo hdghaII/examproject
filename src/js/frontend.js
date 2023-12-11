@@ -1,7 +1,7 @@
 "use strict";
 document.addEventListener('DOMContentLoaded', () => {
   var swiper = new Swiper(".swiper", {
-    cssMode: true,
+    effect: 'fade',
     slidesPerView: 1,
     spaceBetween: 30,
     navigation: {

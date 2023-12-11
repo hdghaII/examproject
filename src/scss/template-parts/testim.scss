@@ -151,17 +151,17 @@
         padding-bottom: 24px;
     }
     &__content {
-        font-family: 'Inter', sans-serif;
+        font-family: 'Inter-Regular', sans-serif;
         font-size: 18px;
-        font-family: 400;
+        font-weight: 400;
         line-height: 130%;
     }   
 }
 @media screen and (max-width: 1400px) {
     .testim {
         &__wrapper {
-            padding-right: 16px;
-            padding-left: 16px;
+            padding-right: 32px;
+            padding-left: 32px;
         }
         &__heading {
             align-items: center;

@@ -244,10 +244,13 @@
 @media screen and (max-width: 1400px) {
     .products {
         &__wrapper {
-            padding-left: 16px;
-            padding-right: 16px;
+            padding-left: 32px;
+            padding-right: 32px;
         }
         &__content {
+            width: 100%;
+            justify-content: space-between;
+            gap: 15px;
             &--item {
                 padding: 48px 32px;
             }
@@ -262,13 +265,18 @@
                 width: 350px;
                 height: auto;
             }
+            &--button {
+                margin-top: auto;
+            }
         }
         &__cards {
             &--title {
                 font-size: 48px;
             }
             &--list {
-                gap: 20px;
+                width: 100%;
+                justify-content: space-between;
+
             }
             &--item {
                 max-width: 305px;
@@ -276,7 +284,7 @@
         }
         &__item {
             &--img {
-                width: 250px;
+                width: 100%;
                 height: auto;
             }
         }
@@ -289,6 +297,7 @@
         }
         &__content {
             flex-direction: column-reverse;
+            align-items: center;
             padding-bottom: 50px;
             &--title {
                 font-size: 32px;

@@ -188,10 +188,14 @@
 @media screen and (max-width: 1400px) {
     .about {
         &__wrapper {
+            width: 100%;
             padding-right: 32px;
             padding-left: 32px;
         }
         &__first {
+            width: 100%;
+            justify-content: space-between;
+            gap: 15px;
             &--text {
                 height: unset;
                 padding: 48px 32px;
@@ -209,8 +213,14 @@
                 width: 350px;
                 height: auto;
             }
+            &--button {
+                margin-top: auto;
+            }
         }
         &__second {
+            width: 100%;
+            justify-content: space-between;
+            gap: 15px;
             &--text {
                 height: unset;
                 padding: 48px 32px;
@@ -235,13 +245,15 @@
                     left: -20px;
                 }
             }
+            &--button {
+                margin-top: auto;
+            }
         }
     }
 }
 @media screen and (max-width: 1024px) {
     .about {
         &__first {
-            gap: 36px;
             flex-direction: column-reverse;
             justify-content: center;
             align-items: center;
@@ -258,6 +270,7 @@
                 gap: unset;
                 width: 100%;
                 justify-content: space-between;
+
             }
             &--subtitle {
                 padding-bottom: 48px;
@@ -268,7 +281,6 @@
             }
         }
         &__second {
-            gap: 36px;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -313,25 +325,25 @@
 @media screen and (max-width: 500px) {
     .about {
         &__wrapper {
-            padding-left: 16px;
-            padding-right: 16px;
+            padding-left: 20px;
+            padding-right: 20px;
             padding-bottom: 106px;
             padding-top: 80px;
         }
         &__first {
             &--text {
-                max-width: 320px;
+                width: 100%;
             }
             &--img {
-                width: 290px;
+                width: 100%;
             }
         }
         &__second {
             &--text {
-                max-width: 320px;
+                width: 100%;
             }
             &--img {
-                width: 290px;
+                width: 100%;
                 &::after {
                     width: 100px;
                     height: 100px;
