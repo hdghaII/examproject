@@ -47,6 +47,13 @@
                 background-image: url(../img/button__arrow--greydarkborder.svg);
             }
         }
+        &:focus {
+            background: #404040;
+            border-color: #404040;
+            .testim__arrow {
+                background-image: url(../img/button__arrow--darkwhitefocus.svg);
+            }
+        }
     }
     &__btntext {
         font-family: 'Inter-Semibold';

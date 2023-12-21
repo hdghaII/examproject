@@ -103,6 +103,10 @@
                 color: #5CE1E6;
             }
         }
+        &:focus {
+            box-shadow: 0px 0px 20px 0px rgba(92, 225, 230, 0.30);
+            background: #35333F;
+        }
         &--text {
             color: #17161C;
             font-family: 'Inter-Semibold';

@@ -69,6 +69,14 @@
                     background-image: url(../img/button__arrow--darkblueborder.svg);
                 }
             }
+            &:focus {
+                background: #00C5CC;
+                box-shadow: 0px 0px 20px 0px rgba(92, 225, 230, 0.30);
+                border-color: #00C5CC;
+                .about__first--arrow {
+                    background-image: url(../img/button__arrow--empty.svg);
+                }
+            }
         }
         &--img {
             width: 435px;
@@ -148,6 +156,13 @@
                     background-image: url(../img/button__arrow--greydarkborder.svg);
                 }
             }
+            &:focus {
+                background: #404040;
+                border-color: #404040;
+                .about__second--arrow {
+                    background-image: url(../img/button__arrow--darkwhitefocus.svg);
+                }
+            }
         }
         &--buttontext {
             text-transform: uppercase;
@@ -183,6 +198,7 @@
         height: 206px;
         position: absolute;
         bottom: -103px;
+        z-index: 2;
     }
 }
 @media screen and (max-width: 1400px) {
