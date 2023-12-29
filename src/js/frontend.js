@@ -1,5 +1,6 @@
 "use strict";
 document.addEventListener('DOMContentLoaded', () => {
+  AOS.init();
   var swiper = new Swiper(".swiper", {
     effect: 'fade',
     slidesPerView: 1,
@@ -35,6 +36,23 @@ $('.header__burger--wrapper').on('click', function() {
     $('.header__menu').removeClass('active');
   }
 });
+$('.main__button').on('click', function() {
+  if( !$('.popup').hasClass('active') ) {
+     $('.popup').addClass('active');
+     $('html').addClass('no-scroll');
+     $('body').addClass('no-scroll')
+     $('.overlay').addClass('active');
+  }
+});
+$('.popup__exit').on('click', function() {
+  if( $('.popup').hasClass('active') ) {
+    $('.popup' ).removeClass('active');
+    $('html').removeClass('no-scroll');
+    $('body').removeClass('no-scroll')
+    $('.overlay').removeClass('active');
+  }
+})
+
 document.addEventListener('DOMContentLoaded', function() {
   var newsletterForm = document.querySelector('.footer__newsletter--form');
 
@@ -43,6 +61,25 @@ document.addEventListener('DOMContentLoaded', function() {
       var emailValue = emailInput.value.trim();
 
       if (!isValidEmail(emailValue)) {
+          alert('Please enter a valid email address.');
+          event.preventDefault(); // Prevent the form submission
+      }
+  });
+
+  function isValidEmail(email) {
+      // Use a regular expression to validate the email format
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+  }
+});
+document.addEventListener('DOMContentLoaded', function() {
+  var popupForm = document.querySelector('.popup__form');
+
+  popupForm.addEventListener('submit', function(event) {
+      var emailInput2 = document.querySelector('.popup__form--text');
+      var emailValue2 = emailInput2.value.trim();
+
+      if (!isValidEmail(emailValue2)) {
           alert('Please enter a valid email address.');
           event.preventDefault(); // Prevent the form submission
       }

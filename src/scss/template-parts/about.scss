@@ -199,6 +199,7 @@
         position: absolute;
         bottom: -103px;
         z-index: 2;
+        animation: rotate 10s linear infinite;
     }
 }
 @media screen and (max-width: 1400px) {

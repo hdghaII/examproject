@@ -81,6 +81,10 @@
         background-color: #D9D9D9;
         padding: 40px 90px;
         position: relative;
+        opacity: 0 !important;
+        &-active {
+            opacity: 1 !important;
+        }
     }
     &-pagination {
         bottom: 125px !important;
