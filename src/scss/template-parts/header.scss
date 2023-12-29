@@ -2,7 +2,7 @@
     display: flex;
 
     position: absolute;
-    z-index: 2;
+    z-index: 5;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -32,7 +32,7 @@
         width: 100%;
         height: 100%;
         background: #C5D86D;
-        z-index: 3;
+        z-index: 6;
         transition: all .6s ease-in-out;
         transform: translateY(-150%);
         &--item {
@@ -142,7 +142,10 @@
 }
 
 @media screen and (max-width: 1024px) {
+
     .header {
+        background-color: #17161C;
+        position: fixed;
         &__wrapper {
             justify-content: space-between;
             width: 100%;
