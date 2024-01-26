@@ -650,7 +650,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .main__button--text {
   color: #17161C;
-  font-family: "Inter-Semibold";
+  font-family: "Inter-Semibold", sans-serif;
+  font-weight: 600;
   text-transform: uppercase;
   line-height: normal;
 }
@@ -2122,7 +2123,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #5CE1E6;
 }
 .footer__newsletter--submit:focus {
-  background: #00C5CC;
+  background-color: #00C5CC;
   box-shadow: 0px 0px 20px 0px rgba(92, 225, 230, 0.3);
   border-color: #00C5CC;
   background-image: url(../img/button__arrow--empty.svg);
@@ -2398,7 +2399,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #5CE1E6;
 }
 .popup__form--button:focus {
-  background: #00C5CC;
+  background-color: #00C5CC;
   box-shadow: 0px 0px 20px 0px rgba(92, 225, 230, 0.3);
   border-color: #00C5CC;
   background-image: url(../img/button__arrow--empty.svg);
