@@ -285,7 +285,7 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
 }
 @font-face {
-  font-family: "Inter-SemiBold";
+  font-family: "Inter-Semibold";
   src: url(../fonts/Inter-Semibold.eot);
   src: local("😥"), url(../fonts/Inter-Semibold.woff) format("woff");
   font-weight: 600;
